@@ -9,14 +9,23 @@
 
 
 // $('.header-right').show();
+alert('Main2.js');
+// inizializza var
+$('.burger-menu-custom').addClass('green');
+$('.burger-menu-custom').hide();
+// $('prova').addClass('red');
 
 // Mostra hamburger Menu
-$('.burger-fake').mouseenter(function(){
-  alert('Sei entrato');
+$('.burger-button').click(function(){
+  // alert('Sei entrato');
+  $(this).addClass('red');
+  $('.burger-menu-custom').show('fast');
 });
 
 
 // Nascondi hamburger Menu
-$('.burger-fake').mouseleave(function(){
-  alert('Sei uscito');
+$('.burger-menu-custom').mouseleave(function(){
+  // alert('Sei uscito');
+  $(this).removeClass('red');
+  $('.burger-menu-custom').hide('slow');
 });
