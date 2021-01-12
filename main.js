@@ -11,12 +11,12 @@
 // $('.header-right').show();
 
 // Mostra hamburger Menu
-$('.burger-fake').mouseenter(function(){
-  alert('Sei entrato');
+$('.fas').click(function(){
+  $('.hamburger-menu').show('fast');
 });
 
 
 // Nascondi hamburger Menu
-$('.burger-fake').mouseleave(function(){
-  alert('Sei uscito');
+$('.close').click(function(){
+  $('.hamburger-menu').hide('slow');
 });
